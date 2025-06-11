@@ -1,14 +1,10 @@
 ## Prefix Sum
-
 ### 1-D Prefix Sum
+Used to find range sum.<br>
+Ex: 
+- Input array nums of size N.
+- Sum of Range [x1, x2]
 
-**Use Case**: Efficient range sum queries on a static array.
-
-**Example**:  
-- Input: `nums` array of size `N`
-- Query: Find sum of range `[x1, x2]`
-
-**Code**:
 ```python
 # Initialize Prefix Sum
 ps = [0] * (N+1)
@@ -30,14 +26,11 @@ print(ps[x2+1] - ps[x1])
 ---
 
 ### 2-D Prefix Sum
+Used to find submatrix sum.<br>
+Ex: 
+- Input matrix of size MxN.
+- Submatrix Sum: (x1, y1) top-left coordinate, (x2, y2) bottom-left coordinate.
 
-**Use Case**: Efficient submatrix sum queries on a static matrix.
-
-**Example**:  
-- Input: `matrix` of size `MxN`
-- Query: Sum of submatrix with top-left `(x1, y1)` and bottom-right `(x2, y2)`
-
-**Code**:
 ```python
 # Initialize Prefix Sum
 ps = [[0]*(N+1) for _ in range(M+1)]
@@ -61,12 +54,11 @@ print(sub_sum)
 ---
 
 ## Difference Arrays
-
-**Use Case**: Efficient range update queries on a 1D array.
-
-**Example**:  
-- Input: `queries` of form `[start, end]` for `N`-sized array.
-- Query: How many times each index was updated.
+1D lazy range update.<br>
+Ex:
+- Input: Queries [start, end], with maximum size N.
+- Find number of queries at x.
+- Make sure of inclusion/exlusion of each index.
 
 **Code**:
 ```python
