@@ -1,6 +1,6 @@
 ## Prefix Sum
-### 1-D PRefix Sum
-Used to find range sum.
+### 1-D Prefix Sum
+Used to find range sum.<br>
 Ex: 
 - Input array nums of size N.
 - Sum of Range [x1, x2]
@@ -17,8 +17,8 @@ for i in range(1, N+1):
 print(ps[x2+1]-ps[x1])
 ```
 
-### 2-D PRefix Sum
-Used to find submatrix sum.
+### 2-D Prefix Sum
+Used to find submatrix sum.<br>
 Ex: 
 - Input matrix of size MxN.
 - Submatrix Sum: (x1, y1) top-left coordinate, (x2, y2) bottom-left coordinate.
@@ -38,7 +38,7 @@ print(sub_sum)
 ```
 
 ## Difference Arrays
-1D lazy range update.
+1D lazy range update.<br>
 Ex:
 - Input: Queries [start, end], with maximum size N.
 - Find number of queries at x.
